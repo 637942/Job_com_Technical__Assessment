@@ -1,0 +1,8 @@
+{
+    "testFiles": "**/*.feature",
+    "baseUrl": "https://www.job.com/",
+    "defaultCommandTimeout": 30000,
+    "pageLoadTimeout": 30000 ,
+    "viewportWidth": 1200,
+  "viewportHeight": 700
+}
