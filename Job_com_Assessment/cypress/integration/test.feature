@@ -42,6 +42,24 @@ Feature: Job.com Website Functionality
     When I click on any particular job title
     Then I should be prompted to the respective job site
 
+    Scenario: Verifying the User login feature with invalid user details
+    Given I am in the Job.com home page
+    When I click on Sign in
+    Then I should see the Sign in page
+    When I enter the invalid email
+    And I enter the invalid password
+    And I click on the signin button
+    Then I should see an error message in the page
+    When I enter the valid email
+    And I enter the wrong password
+    And I click on the signin button
+    Then I should see an error message in the page
+    When I enter the invalid email
+    And I enter the wrong password
+    And I click on the signin button
+    Then I should see an error message in the page
+
+
 
 
 

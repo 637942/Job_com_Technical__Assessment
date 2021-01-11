@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "node_modules\\.bin\\cypress open",
+    "cy:run": "node_modules\\.bin\\cypress run",
+    "cy:headrun": "npm run cy:run -- --headed",
+    "cy:chromerun": "npm run cy:run -- --browser chrome",
+    "cy:dashboard": "npm run cy:run -- --record --key 7eb76bdf-d31c-4c94-8ddc-bf246b572775"
   },
   "author": "Karpagam Vellaichamy",
   "license": "ISC",
